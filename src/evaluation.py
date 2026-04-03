@@ -1,0 +1,7 @@
+import numpy as np
+from sklearn.metrics import mean_absolute_error, r2_score
+
+def evaluate_force(y_true, y_pred):
+    mae = mean_absolute_error(y_true, y_pred)
+    r2 = r2_score(y_true, y_pred)
+    return mae, r2
