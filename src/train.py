@@ -6,10 +6,7 @@ from sklearn.preprocessing import StandardScaler
 
 # Dummy loader (replace with NinaPro loader)
 def load_data():
-    X = np.random.randn(10000, 12)  # EMG channels
-    y_gesture = np.random.randint(0, 40, 10000)
-    y_force = np.random.rand(10000)
-    return X, y_gesture, y_force
+    raise NotImplementedError("Replace with NinaPro DB2 data loader")
 
 def prepare_features(X):
     segments = segment_signal(X)
